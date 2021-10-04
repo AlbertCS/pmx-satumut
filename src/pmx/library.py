@@ -62,7 +62,7 @@ def pmx_data_file(filename, verbose=False):
     if verbose:
         print("pmx__> Loading data file \"%s\"" % data_file, file=sys.stderr)
     if data_file.split('.')[-1] == 'pkl':
-        return pickle.load(open(data_file))
+        return pickle.load(open(data_file, "rb"))
     else:
         return data_file
 

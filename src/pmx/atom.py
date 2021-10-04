@@ -192,7 +192,7 @@ class Atom:
         """PDB String to Atom"""
 
         self.race = line[0:6]
-        self.id = int(line[7:11])
+        self.id = int(line[6:11])
         self.orig_id = origID
         self.name = line[12:16].strip()
         self.altloc = line[16]
@@ -204,10 +204,10 @@ class Atom:
             self.resnr = line[22:27]  # contains insertion code
 
         self.x = [float(line[30:38]),
-                  float(line[39:46]),
-                  float(line[47:54])]
+                  float(line[38:46]),
+                  float(line[46:54])]
         try:
-            self.occ = float(line[55:60])
+            self.occ = float(line[54:60])
         except:
             self.occ = 1.
         try:

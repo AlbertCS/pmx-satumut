@@ -1,0 +1,36 @@
+{% set data = load_setup_py_data() %}
+
+package:
+    name: pmx
+    version: {{ data.get('version')  }}
+
+about:
+    home: https://github.com/cescgina/pmx/tree/develop
+    license: MIT
+    license_file: LICENSE
+    summary: Toolkit for free-energy calculation setup/analysis and biomolecular structure handling
+
+source:
+    path: ..
+
+build:
+    script: python -m pip install . --no-deps -vv
+    number: 0
+
+requirements:
+    host:
+      - python {{ python  }}
+      - setuptools
+      - pip
+    run:
+      - python
+      - numpy
+      - scipy
+      - matplotlib
+      - future
+
+test:
+    imports:
+      - pmx
+    commands:
+      - pmx --version

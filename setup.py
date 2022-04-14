@@ -84,5 +84,5 @@ setup(name='pmx-satumut',
       ext_modules=extensions,
       python_requires=">=2.7, <3",
       install_requires=['numpy>=1.14', 'scipy>=1.1', 'matplotlib>=2.2'],
-      entry_points={'console_scripts': ['pmx-satumut = pmx.scripts.cli:entry_point']}
+      entry_points={'console_scripts': ['pmx = pmx.scripts.cli:entry_point']}
       )

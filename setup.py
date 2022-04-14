@@ -61,7 +61,7 @@ extensions = [pmx, xdrio]
 # -----
 # Setup
 # -----
-setup(name='pmx',
+setup(name='pmx-satumut',
       version=versioneer.get_version(),
       cmdclass=versioneer.get_cmdclass(),
       description='Python Toolbox structure file editing and writing simulation setup/analysis tools',
@@ -73,16 +73,16 @@ setup(name='pmx',
         'Intended Audience :: Science/Research',
         'Topic :: Scientific/Engineering',
                   ],
-      author='Daniel Seeliger',
-      author_email='seeliger.biosoft@gmail.de',
-      url='https://github.com/deGrootLab/pmx',
-      download_url="https://github.com/deGrootLab/pmx/releases/latest",
+      author='AlbertCS, original:Daniel Seelige',
+      author_email='albert.canellas@bsc.es',
+      url='https://github.com/AlbertCS/pmx-satumut',
+      download_url="https://github.com/AlbertCS/pmx-satumut/releases/latest",
       license='GPL 3',
-      packages=['pmx'],
+      packages=['pmx-satumut'],
       include_package_data=True,
       zip_safe=False,
       ext_modules=extensions,
       python_requires=">=2.7, <3",
       install_requires=['numpy>=1.14', 'scipy>=1.1', 'matplotlib>=2.2'],
-      entry_points={'console_scripts': ['pmx = pmx.scripts.cli:entry_point']}
+      entry_points={'console_scripts': ['pmx-satumut = pmx.scripts.cli:entry_point']}
       )

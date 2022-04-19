@@ -39,7 +39,7 @@ extensions = [pmx, xdrio]
 # -----
 # Setup
 # -----
-setup(name='pmx',
+setup(name='pmx-satumut',
       version=versioneer.get_version(),
       cmdclass=versioneer.get_cmdclass(),
       description='Toolkit for free-energy calculation setup/analysis '
@@ -52,7 +52,7 @@ setup(name='pmx',
         'Intended Audience :: Science/Research',
         'Topic :: Scientific/Engineering',
       ],
-      url='https://github.com/deGrootLab/pmx/tree/develop',
+      url='https://github.com/AlbertCS/pmx-satumut/tree/develop',
       author='Daniel Seeliger',
       author_email='seeliger.biosoft@gmail.de',
       license='GPL 3',
